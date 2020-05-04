@@ -19,7 +19,7 @@ public class MetadataResource {
 	@Autowired
 	MetaDataService service;
 	
-	@GetMapping(value = "")
+	@GetMapping
 	public List<String> listTables(){
 		return service.listTables();
 	}
