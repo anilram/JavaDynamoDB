@@ -15,7 +15,7 @@ import com.amazonaws.services.dynamodbv2.document.DynamoDB;
 public class DynamoDBClient {
 	
 	private static PropertiesFileCredentialsProvider getAWSCredentialsProvider() {
-		return new PropertiesFileCredentialsProvider(System.getenv("AR_AGENT_HOME")+File.separator+"awscredentials.properties");
+		return new PropertiesFileCredentialsProvider(System.getenv("APP_CONFIG")+File.separator+"awscredentials.properties");
 	}
 
 	@Bean
